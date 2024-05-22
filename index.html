@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .header {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.9em;
+            color: #ff66b2;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .message {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .play-button {
+            margin-top: 20px;
+            font-size: 1em;
+            padding: 10px 20px;
+            background-color: #ff66b2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .play-button:hover {
+            background-color: #e0559e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Happy Birthday, Bangaram!</div>
+        <div class="image-container">
+            <img src="./ThenNow.png" alt="Happy Birthday Image">
+        </div>
+        <div class="message">
+            <p>Wishing you all the love, joy, and happiness in the world. You mean everything to me, and I hope your special day is as beautiful and amazing as you are. I love you!</p>
+        </div>
+        <div class="footer">
+            <p>With all my love, Your Uma</p>
+        </div>
+        <button class="play-button" onclick="playAudio()">Play Birthday Wishes</button>
+    </div>
+    
+    <script>
+        function playAudio() {
+            var audio = new Audio('./HappyBirthday.m4a');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
